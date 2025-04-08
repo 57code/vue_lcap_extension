@@ -5,8 +5,8 @@ namespace extensions.cw_fe_certification.viewComponents {
   @ExtensionComponent({
     type: 'both',
     ideusage: {
-      idetype: 'container',
-    }
+      idetype: 'modal',
+    },
   })
   @Component({
     title: '自定义面板',
