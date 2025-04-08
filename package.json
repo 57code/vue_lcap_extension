@@ -1,7 +1,7 @@
 {
   "name": "vue_lcap_extension",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "lcapIdeVersion": "3.12",
   "files": [
     "dist-theme"
