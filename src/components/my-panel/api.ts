@@ -5,7 +5,7 @@ namespace extensions.cw_fe_certification.viewComponents {
   @ExtensionComponent({
     type: 'both',
     ideusage: {
-      idetype: 'modal',
+      idetype: 'container',
     },
   })
   @Component({
