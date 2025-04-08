@@ -5,7 +5,7 @@
       <span v-if="canClose" @click="onClose">x</span>
     </div>
     <div :class="$style.body">
-      <slot>content...</slot>
+      <slot></slot>
     </div>
     <div :class="$style.footer">
       <slot name="footer">footer</slot>

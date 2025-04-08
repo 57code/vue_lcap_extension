@@ -38,5 +38,10 @@ namespace extensions.cw_fe_certification.viewComponents {
       title: '标题定制'
     })
     slotHeader: () => Array<nasl.ui.ViewComponent>;
+
+    @Slot({
+      title: '页脚定制'
+    })
+    slotFooter: () => Array<nasl.ui.ViewComponent>;
   }
 }

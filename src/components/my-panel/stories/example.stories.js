@@ -20,10 +20,13 @@ const Template = (args) => ({
   template: `
     <my-panel v-bind="$props">
       <template #header>
-        title
+        {{args.title}}
       </template>
-      <template>
-        this is content...
+      <template #default>
+        {{args.content}}
+      </template>
+      <template #footer>
+        {{args.footer}}
       </template>
     </my-panel>
     `,
@@ -33,5 +36,8 @@ export const Example1 = Template.bind({
   name: '基本用法',
 });
 Example1.args = {
-  canClose: true
+  canClose: true,
+  title: '这是标题',
+  content: '这是内容',
+  footer: '这是底部',
 };
