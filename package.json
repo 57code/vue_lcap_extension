@@ -1,7 +1,7 @@
 {
   "name": "vue_lcap_extension",
   "private": true,
-  "version": "1.0.6",
+  "version": "1.0.7",
   "lcapIdeVersion": "3.12",
   "main": "dist-theme/index.js",
   "module": "dist-theme/index.mjs",
