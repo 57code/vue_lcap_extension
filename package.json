@@ -3,6 +3,8 @@
   "private": true,
   "version": "1.0.6",
   "lcapIdeVersion": "3.12",
+  "main": "dist-theme/index.js",
+  "module": "dist-theme/index.mjs",
   "files": [
     "dist-theme"
   ],
