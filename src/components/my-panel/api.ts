@@ -8,7 +8,7 @@ namespace extensions.cw_fe_certification.viewComponents {
       idetype: 'container',
     },
   })
-  @Component({
+  @Component({  
     title: '自定义面板',
     description: '自定义拥有两个插槽，可以自定义面板的标题和内容',
   })
