@@ -13,7 +13,7 @@
   </div>
 </template>
 <script setup>
-import { defineProps, ref } from "vue";
+import { defineProps, ref, watchEffect, watch } from "vue";
 
 defineProps({
   canClose: {
@@ -27,6 +27,15 @@ const show = ref(true);
 function onClose() {
   show.value = false;
 }
+
+const emit = defineEmits(["sync:state"]);
+watch(
+  show,
+  (newVal) => {
+    emit("sync:state", "show", newVal);
+  },
+  { immediate: true }
+);
 </script>
 <style module>
 .container {
@@ -40,9 +49,10 @@ function onClose() {
 .header {
   padding: 10px;
   border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
 }
 .header span {
-  float: right;
   padding-right: 5px;
   cursor: pointer;
 }

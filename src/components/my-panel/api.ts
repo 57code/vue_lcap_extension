@@ -16,6 +16,12 @@ namespace extensions.cw_fe_certification.viewComponents {
     constructor(options?: Partial<MyPanelOptions>) {
       super();
     }
+
+    @Prop({
+        title: '显示状态',
+        settable: true,
+    })
+    show: nasl.core.Boolean;
   }
 
   export class MyPanelOptions extends ViewComponentOptions {
